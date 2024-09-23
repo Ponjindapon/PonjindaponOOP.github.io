@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison of OOP in Java, C++, and Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>การเปรียบเทียบการเขียนโปรแกรมแบบ OOP ในภาษา Java, C++, และ Python</h1>
+
+    <h2>ความเหมือน</h2>
+    <p>ทั้งสามภาษาใช้หลักการ OOP ที่เหมือนกัน ซึ่งรวมถึงการใช้คลาส (Class), วัตถุ (Object), การสืบทอด (Inheritance), การห่อหุ้ม (Encapsulation), และการพ้องรูป (Polymorphism).</p>
+
+    <h2>ความแตกต่าง</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ประเด็น</th>
+                <th>Java</th>
+                <th>C++</th>
+                <th>Python</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>การจัดการหน่วยความจำ</td>
+                <td>ใช้ Garbage Collection จัดการหน่วยความจำอัตโนมัติ</td>
+                <td>ผู้ใช้ต้องจัดการหน่วยความจำด้วย new/delete</td>
+                <td>ใช้ Garbage Collection เช่นเดียวกับ Java</td>
+            </tr>
+            <tr>
+                <td>การกำหนดประเภทตัวแปร</td>
+                <td>Static Typing ต้องระบุชนิดของตัวแปร</td>
+                <td>Static Typing ต้องระบุชนิดของตัวแปร</td>
+                <td>Dynamic Typing ไม่ต้องระบุชนิดของตัวแปร</td>
+            </tr>
+            <tr>
+                <td>การสนับสนุนหลายมรดก (Multiple Inheritance)</td>
+                <td>ไม่รองรับตรงๆ แต่ใช้ interfaces</td>
+                <td>รองรับ</td>
+                <td>รองรับ</td>
+            </tr>
+            <tr>
+                <td>Constructor และ Destructor</td>
+                <td>มี Constructor ไม่มี Destructor (Garbage Collection)</td>
+                <td>มีทั้ง Constructor และ Destructor</td>
+                <td>มี Constructor และ Destructor (`__init__`, `__del__`)</td>
+            </tr>
+            <tr>
+                <td>ความสามารถในเชิงการเขียนโปรแกรม</td>
+                <td>เน้น OOP เท่านั้น</td>
+                <td>รองรับทั้ง Procedural และ OOP</td>
+                <td>ยืดหยุ่น รองรับทั้ง Procedural, OOP และ Functional</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>สรุป</h2>
+    <p><strong>Java:</strong> เน้นความปลอดภัยในเรื่องการจัดการหน่วยความจำ มีไวยากรณ์ที่เคร่งครัดกว่าและไม่รองรับ multiple inheritance แบบตรงๆ แต่ใช้ interfaces แทน</p>
+    <p><strong>C++:</strong> มีความยืดหยุ่นสูง สามารถใช้ได้ทั้ง OOP และโปรแกรมเชิงกระบวนการ ต้องจัดการหน่วยความจำด้วยตนเอง</p>
+    <p><strong>Python:</strong> โค้ดสั้นและเข้าใจง่ายเพราะเป็น dynamic typing สนับสนุน multiple inheritance โดยตรง</p>
+    
+    <div class="footer">
+        <p>© 2024 OOP Comparison. All rights reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>
